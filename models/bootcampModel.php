@@ -1,11 +1,11 @@
 <?php
     //Como viene y como luce nuestra informacion
-    
+    require_once './config.php';
     class Bootcamp{
         private $conexion;
 
         public function __construct(){
-            $this->conexion = new mysqli('127.0.0.1','root','','kodigo');
+            $this->conexion = new mysqli(DB_HOST,DB_USER,DB_PASS,DB_NAME);
             if($this->conexion->connect_error){
                 die("Conexión Fallida: ".$this->conexion->connect_error);
             }else{
