@@ -3,6 +3,8 @@
 // ----------------------------------------------------------------
 // En este archivo empieza la aplicacion.
 // ----------------------------------------------------------------
+require_once './models/bootcampModel.php';
 
-echo "Hola Mundo...";
+$bootcamp = new Bootcamp();
+
 ?>
